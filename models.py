@@ -34,4 +34,3 @@ class BudgetItem():
 
 class Date():
     pass
-

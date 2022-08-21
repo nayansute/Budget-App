@@ -46,10 +46,10 @@ class LoginPage(tk.Frame):
         tk.Frame.config(self, bg='lightblue')
         tk.Label(self, text='Login', font=("Cambria", 26), bg='lightblue').pack(pady=5)
         self.username = tk.Entry(self, font=MEDIUM_TEXT_FONT, width=ENTRY_BOXES_WIDTH)
-        self.username.insert(0, 'Username')
+        self.username.insert(0, '')
         self.username.pack(pady=2)
         self.password = tk.Entry(self, font=MEDIUM_TEXT_FONT, width=ENTRY_BOXES_WIDTH)
-        self.password.insert(0, 'Password')
+        self.password.insert(0, '')
         self.password.config(show="*")
         self.password.pack(pady=2)
         self.invalid = tk.Label(self, text="Information not valid", font=("Cambria", 12))
@@ -372,4 +372,3 @@ if __name__ == '__main__':
     window.config(bg="lightblue")
     window.title("Budgeting App")
     window.mainloop()
-    
